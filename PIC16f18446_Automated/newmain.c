@@ -20,8 +20,8 @@ void main() {
    volatile uint8_t c = 0x1F;
    TMR1L = c;
    volatile uint8_t b =0x08;
-   T1CON = b;
+   TMR0H = b;
    volatile uint8_t t = add(a,b,c);
-   T2CON = t;
+   TMR0L = t;
    return;
 }
